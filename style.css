@@ -1,0 +1,148 @@
+*{
+    background: #f3f5fc;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: 32px;
+    line-height: 150%;
+}
+
+
+.logo{
+    padding: 10px;
+    margin-left: 10px;
+    width: 10%;
+    display: flex;
+    
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    font-size: 40px;
+    font-style: italic;
+    height: 250px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0A3871; 
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.mensaje{
+    width: 330px;
+    height: 500px;
+    background: white;
+    background-image: url("imagenes/muneco.png") ;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 18px;
+    font-style: italic;
+}
+
+@media screen and (max-width:480px){
+    .logo{
+        width: auto;
+        margin: auto;
+    }
+
+    main{
+        display: unset;
+        flex-direction: column;
+    }
+
+    .text-area {
+        font-size: unset;
+        text-align: center;
+        margin-left: 50px;
+    }
+     
+    .informacion{
+        font-size: 1em;
+        text-align: center;
+
+    }
+
+    .botones{
+        text-align: center;
+        align-items: flex-end;
+    }
+    
+    .mensaje{
+        flex-direction: column;
+        margin-left: 50px;
+        width: 260px;
+    }
+
+    .btn-copiar{
+        margin-left: 50px;
+        margin-top: 550px;
+        position: unset;
+        width: 290px;
+    }
+
+}
